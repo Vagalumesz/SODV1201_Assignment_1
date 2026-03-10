@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css"> <!-- link to the css style page -->
+</head>
+<body>
+
+    <header> <!-- header with page links -->
+        <nav>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="mark_to_grade.html">Mark to Grade</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="temperature_converter.html">Temperature Converter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Temperature Converter</h1>
+    <input type="number" id="input-temp" placeholder="Enter temperature"> <!-- input box for the temperature -->
+    <select id="unit">
+        <option value="fahrenheit">Fahrenheit</option> <!-- drop down menu with the options of units -->
+        <option value="celsius">Celsius</option>
+        <option value="kelvin">Kelvin</option>
+    </select>
+    <button onclick="convertTemperature()">Convert</button> <!-- button to convert the temperature units -->
+    <p id="fahrenheit-output"></p>
+    <p id="celsius-output"></p>
+    <p id="kelvin-output"></p>
+
+    
+    <script src="temperature_converter.js"></script>
+</body>
+</html>

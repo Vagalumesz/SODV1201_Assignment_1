@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark to Grade Converter</title>
+    <link rel="stylesheet" href="style.css"> <!-- link to the css style page -->
+</head>
+<body>
+    <header> <!-- header with the links of the other pages -->
+        <nav>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="mark_to_grade.html">Mark to Grade</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="temperature_converter.html">Temperature Converter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Mark to Grade Converter</h1>
+    <label for="mark-input">Enter your mark: </label>
+    <input type="text" id="mark-input" />
+    <button onclick="MarkToGrade()">Convert</button> <!-- button to convert the marks into grades -->
+    <p id="validationmessage"></p>
+    <p id="grade-output"></p>
+
+    
+    <script src="mark_to_grade.js"></script> <!-- link the to the js file -->
+</body>
+</html>

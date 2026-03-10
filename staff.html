@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Information</title>
+    <link rel="stylesheet" href="style.css"> <!-- link to the css style page -->
+</head>
+<body>
+    <header> <!-- header with page links -->
+        <nav>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="mark_to_grade.html">Mark to Grade</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="temperature_converter.html">Temperature Converter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Staff Information</h1>
+
+    <button id="change_order" onclick="ChangeSortingOrder()">Change Sorting Order</button> <!-- button to change the sorting order -->
+
+    <table id="staff-table"> <!-- staff table -->
+        <tr>
+            <th onclick="sortTable(0)">Name</th>
+            <th onclick="sortTable(1)">Position</th>
+            <th onclick="sortTable(2)">Location</th>
+            <th onclick="sortTable(3)">Office</th>
+            <th onclick="sortTable(4)">Start Date</th>
+            <th onclick="sortTable(5, true)">Salary</th>
+        </tr>
+        
+    </table>
+
+   
+    <script src="staff.js"></script>
+</body>
+</html>
